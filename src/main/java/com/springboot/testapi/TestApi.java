@@ -13,9 +13,7 @@ public class TestApi {
         return "Welcome to my API";
     }
     public String fallback(Throwable t) {
-        // Here you can handle the penalty mechanism
         try {
-            // Wait for an additional minute as penalty
             Thread.sleep(60000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
